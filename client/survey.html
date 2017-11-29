@@ -8,7 +8,6 @@
 <body>
 	<div style="float: left;">
 		<div style="float: left;">
-			<h1>Loundness Level L1</h1>
 			<div class="row flex">
 				<div class="gap"> <h3>Fixed Frequency</h3> </div>
 				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
@@ -137,7 +136,6 @@
 			</form>
 		</div>
 		<div style="float: right; margin-left:60px">
-			<h1>Loundness Level L2</h1>
 			<div class="row flex">
 				<div class="gap"> <h3>Fixed Frequency</h3> </div>
 				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
@@ -267,7 +265,6 @@
 		</div>		
 	</div>
 	<div style="float: right;">
-			<h1>Loundness Level L3</h1>
 			<div class="row flex">
 				<div class="gap"> <h3>Fixed Frequency</h3> </div>
 				<div class="gap"> <h3>Variable Frequency Sliders </h3></div>
@@ -395,13 +392,25 @@
 				</div>
 			</form>
 		</div>
+		<div >
+			<p class="width30">How seriously did you participate? Rate 10 for most serious, 0 for least serious</p>
+			<input id="serious" 
+				class="width30"
+				class="slidergap" type="range"
+				list="seriousity" value="0"
+				min="0" max="10"		
+				step="1"
+				name="range"
+				oninput="setSeriousnessDisplay(this.value)">
+			<input id="seriousness" class="cents" type="text" value="0">
 	<button type="submit" class="width100" onclick="onSubmit()">Submit</button> 
     <script src="controller.js"></script>
+			</div>	
+
 </body>
 </html>
 
-<!--
-<datalist id="tickmarks">
+<datalist id="seriousity">
   <option value="0" label="0%">
   <option value="1">
   <option value="2">
@@ -414,4 +423,3 @@
   <option value="9">
   <option value="10" label="100%">
 </datalist>
--->
