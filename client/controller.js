@@ -96,7 +96,7 @@ function setVolumeAtL2(ref_vol){
 }
 
 function setVolumeAtL3(ref_vol){
-	var l3=ref_vol*Math.pow(10,(45/20));
+	var l3=ref_vol*Math.pow(10,(40/20));
 	return l3;
 }
 
